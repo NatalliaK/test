@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета_if</title>
+</head>
+<body>
+<script>
+	"use strict";
+	var surname = prompt("Напишите Вашу фамилию", "");
+	var name = prompt("Напишите Ваше имя", "");
+	var patronymic = prompt("Напишите Ваше отчество", "");
+	var year = prompt("Сколько Вам лет", "");
+	var gender = confirm("Ваш пол--мужской?");
+	var age = year*360;
+	var retire;
+
+	if (gender === true) {
+		gender = "мужской";
+
+		if(year < 65) {
+			retire = "нет";
+		} else {
+			retire = "да";
+		}
+
+	} else {
+		gender = "женский";
+
+		if(year < 60) {
+			retire = "нет";
+		} else {
+			retire = "да";
+		}
+	}
+
+	alert("ФИО: " + surname + " " + name + " " + patronymic + "\n " + "возраст, лет: " + year + "\n " + "возраст, дней: " + age + "\n " + "пол: " + gender + "\n " + "пенсионный возраст: " + retire);
+</script>
+</body>
+</html>
