@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Соревнования</title>
+	<style>html, body {
+		min-width: 320px;
+		max-width: 1200px;
+		min-height: 100%;
+		height: 100%;
+		margin: 0 auto;
+
+		box-sizing: border-box;
+		font-size: 14px;
+		line-height: calc(1em*1.3);
+		font-family: Arial, Tahoma, sans-serif;
+	}
+
+	a {
+		cursor: pointer;
+		color: #0000ee;
+		text-decoration: underline;
+	}
+
+	.header, .footer {
+		width: 100%;
+
+		text-transform: uppercase;
+		color: #0000ff;
+		text-align: center;
+		font-size: calc(1em*1.4);
+		line-height: calc(1em*1.4);
+
+		background-color: #add8e6;
+	}
+
+	.header {
+		padding: 13px 0;
+	}
+
+	.container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav {
+		background-color: #f0e68c;
+	}
+
+	.nav__title2 {
+		padding: 0 20px;
+
+		font-weight: bold;
+	}
+
+	.nav__list {
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+	.nav__item {
+		text-transform: lowercase;
+	}
+
+	.main {
+		background: fixed #fff url("img/ball.png") top 28px right repeat-y;
+	}
+
+	.main__title1 {
+		margin: 0;
+		padding: 15px 0;
+
+		text-align: center;
+		text-transform: uppercase;
+		font-size: calc(1em*1.3);
+
+		background-color: #fff;
+	}
+
+	.main__img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.main__text {
+		margin: 0;
+		padding: 0 10px 20px;
+	}
+
+	.footer {
+		padding: 23px 0;
+	}
+
+	@media (min-width: 440px) {
+		.main__img {
+			margin: 0 20px 10px;
+			width: 200px;
+			height: auto;
+
+			float: left;
+		}
+
+		.main__title1 {
+			background-color: transparent;
+		}
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	@media (min-width: 600px) {
+		body {
+			font-size: 16px;
+		}
+
+		.container {
+			position: relative;
+
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+		}
+
+		.nav {
+			width: 170px;
+			float: left;
+			position: relative;
+		}
+
+		.nav__title2 {
+			padding: 20px;
+		}
+
+		.nav__list {
+			padding-right: 20px;
+		}
+
+		.main {
+			margin-left: 170px;
+			position: relative;
+
+			background-image: none;
+			background-color: transparent;
+		}
+
+		.main__text {
+			padding-left: 20px;
+		}
+
+		.nav__back, .main__back {
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+		}
+
+		.nav__back {
+			width: 170px;
+			background-color: #f0e68c;
+		}
+
+		.main__back {
+			width: 100%;
+			z-index: -2;
+			background: fixed #fff url("img/ball.png") top -1px right repeat-y;
+		}
+	}</style>
+</head>
+<body>
+<header class="header">Привет участникам соревнований!</header>
+<div class="container  clearfix">
+	<nav class="nav">
+		<nav class="nav__title2">Виды спорта</nav>
+		<ul class="nav__list">
+			<li class="nav__item"><a href="#">конькобежный спорт</a></li>
+			<li class="nav__item"><a href="#">биатлон</a></li>
+			<li class="nav__item"><a>футбол</a></li>
+			<li class="nav__item"><a href="#">стрельба из лука</a></li>
+			<li class="nav__item"><a href="#">прыжки в длину</a></li>
+			<li class="nav__item"><a href="#">прыжки в высоту</a></li>
+			<li class="nav__item"><a href="#">фигурное катание</a></li>
+			<li class="nav__item"><a href="#">синхронное плавание</a></li>
+			<li class="nav__item"><a href="#">шахматы</a></li>
+			<li class="nav__item"><a href="#">шашки</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<h1 class="main__title1">Футбол</h1>
+		<img src="img/football.jpg" alt="участники" class="main__img  clearfix" width="198" height="133">
+		<p class="main__text">Футбол&#8212;командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
+		<p class="main__text">Есть 17 официальных правил игры, каждое из которых содержит спивок оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые,  женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.</p>
+	</div>
+	<div class="nav__back"></div>
+	<div class="main__back"></div>
+</div>
+<footer class="footer">Главное не победа, а&nbsp;участие!</footer>
+</body>
+</html>
